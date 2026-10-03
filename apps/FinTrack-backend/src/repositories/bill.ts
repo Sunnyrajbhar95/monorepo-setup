@@ -2,8 +2,8 @@ import type {
   CreateBillRequest,
   BillParticipentRequest,
 } from "../types/bill.types.ts";
-import { prisma } from "../lib/prisma.ts";
-import type { Bill, BillParticipent } from "@prisma/client";
+ import { prisma } from "@monorepo-setup/db/src/index.ts";
+import type { Bill, BillParticipent } from "@monorepo-setup/db/src/index.ts";
 class BillRepository {
   async createBill(data: CreateBillRequest): Promise<Bill> {
     return await prisma.bill.create({

@@ -1,7 +1,7 @@
 import type { Request, Response, NextFunction } from "express";
 import apiError from "../utils/apiError.ts";
 import asyncHandler from "../utils/asyncHandler.ts";
-import { prisma } from "../lib/prisma.ts";
+import { prisma } from "@monorepo-setup/db/src/index.ts";
 import jwt from "jsonwebtoken";
 const userAuth = asyncHandler(
   async (req: Request, res: Response, next: NextFunction) => {

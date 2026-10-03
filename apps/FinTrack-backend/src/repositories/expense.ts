@@ -1,5 +1,5 @@
-import { prisma } from "../lib/prisma.ts";
-import type { Expense } from "@prisma/client";
+import { prisma } from "@monorepo-setup/db/src/index.ts";
+import type { Expense } from "@monorepo-setup/db/src/index.ts";
 
 class expenseRepo {
   async createExpense(expense: Expense): Promise<Expense> {

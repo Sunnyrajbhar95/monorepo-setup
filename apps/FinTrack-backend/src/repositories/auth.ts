@@ -1,5 +1,5 @@
-import { prisma } from "../lib/prisma.ts";
-import type { User } from "@prisma/client";
+import { prisma } from "@monorepo-setup/db/src/index.ts";
+import type { User } from "@monorepo-setup/db/src/index.ts";
 class UserAuthRepository {
   // Create a new user in the database
   async createUser(userData: User): Promise<User> {
