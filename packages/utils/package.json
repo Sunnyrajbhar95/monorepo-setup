@@ -1,0 +1,17 @@
+{
+  "name": "@monorepo-setup/utils",
+  "version": "1.0.0",
+  "main": "./dist/index.js",
+  "scripts": {
+      "dev": "tsc --watch",
+      "build": "tsc"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "packageManager": "pnpm@10.24.0",
+  "type": "module",
+  "devDependencies": {
+    "typescript": "^7.0.2"
+  }
+}

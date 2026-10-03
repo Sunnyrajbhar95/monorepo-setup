@@ -1,0 +1,26 @@
+{
+  "name": "@monorepo-setup/db",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "db:generate": "prisma generate",
+    "db:migrate": "prisma migrate dev",
+    "db:seed": "prisma db seed"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "packageManager": "pnpm@10.24.0",
+  "dependencies": {
+    "@prisma/client": "^7.10.0",
+    "dotenv": "^17.4.2"
+  },
+  "devDependencies": {
+    "@types/node": "^25.9.8",
+    "prisma": "^7.10.0",
+    "tsx": "^4.23.13",
+    "typescript": "^7.0.2"
+  }
+}
