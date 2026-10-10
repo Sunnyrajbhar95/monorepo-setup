@@ -6,9 +6,6 @@ import billRoutes from "./billRoutes/billRoutes.ts";
 
 routes.use("/auth", authRoutes);
 routes.use("/expense", expenseRouter);
-routes.use(
-  "/bill",
-  billRoutes,
-);
+routes.use("/bill", billRoutes);
 
 export default routes;

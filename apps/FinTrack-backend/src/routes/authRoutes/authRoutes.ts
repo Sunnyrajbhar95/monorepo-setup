@@ -10,14 +10,11 @@ authRoutes.post("/signup", validate(signupSchema), authController.signup);
 authRoutes.post("/verify-otp", authController.verifyUser);
 authRoutes.post("/login", authController.login);
 authRoutes.get("/refresh-token", authController.refreshToken);
-
 authRoutes.use(userAuth);
 authRoutes.get("/protected", (req, res) => {
   console.log("User ID from token:", req.user?.id); // Access the user ID from the token
   res.status(200).json({ message: "You have accessed a protected route!" });
 });
-
 authRoutes.post("/change-password", authController.changePassword);
 authRoutes.get("/logout", authController.logout);
-
 export default authRoutes;

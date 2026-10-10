@@ -1,5 +1,5 @@
 {
-  "name": "client",
+  "name": "@monorepo/client",
   "private": true,
   "version": "0.0.0",
   "type": "module",
@@ -12,9 +12,11 @@
   "dependencies": {
     "@tailwindcss/postcss": "^4.3.3",
     "@tailwindcss/vite": "^4.3.3",
+    "axios": "^1.20.0",
     "postcss": "^8.5.28",
     "react": "^19.2.8",
     "react-dom": "^19.2.8",
+    "react-router-dom": "^7.18.4",
     "tailwindcss": "^4.3.3"
   },
   "devDependencies": {

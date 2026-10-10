@@ -1,7 +1,9 @@
+import AppRouter from "./router";
+
 function App() {
   return (
     <div className="App">
-      <h1>Welcome to the Client App</h1>
+      <AppRouter />
     </div>
   );
 }
